@@ -1,9 +1,0 @@
-{
-  "name": "cheese",
-  "version": "1.0.0",
-  "description": "Chat App",
-  "main": "src/compiled/index.js",
-  "repository": "https://github.com/nottimisreal/cheeseat",
-  "license": "Apache 2.0",
-  "private": true
-}
