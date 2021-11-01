@@ -1,7 +1,7 @@
 function App() {
   return (
     <div className="App">
-      <span>Hello World</span>
+      <button onClick={()=>window.location.href='/login'}>Login</button>
     </div>
   );
 }

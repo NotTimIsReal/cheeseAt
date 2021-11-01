@@ -2,13 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import 'dotenv'
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import LoginPage from './pages/login';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Switch>
+      <Route path="/" component={App} exact={true}/>
+      <Route path="/login" component={LoginPage} exact={true}/>
+    </Switch>
+  </Router>,
   document.getElementById('root')
 );
 
